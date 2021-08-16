@@ -1,0 +1,11 @@
+libs =
+import libs += lyrahgames-pareto%lib{lyrahgames-pareto}
+import libs += lyrahgames-gnuplot%lib{lyrahgames-gnuplot}
+import libs += fmt%lib{fmt}
+import libs += glm%lib{glm}
+
+./: exe{pareto-surface-cutter}: {hxx cxx}{**} ../lyrahgames/delaunay/hxx{**} $libs
+
+cxx.poptions =+ "-I$out_root" "-I$src_root"
+
+

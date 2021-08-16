@@ -1,0 +1,19 @@
+: 1
+name: vipo-pareto-surface-cutter
+version: 0.1.0-a.0.z
+project: vipo
+summary: Executable to Estimate Continuously Connected Areas of Three-Objective Pareto Frontiers
+license: GPL-3.0-or-later
+
+description-file: README.md
+url: https://github.com/lyrahgames/vipo-pareto-surface-cutter
+email: lyrahgames@mailbox.org
+
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+
+depends: fmt ^ 7.0.0
+depends: glm ^ 0.9.9
+
+depends: lyrahgames-gnuplot == 0.1.4
+depends: lyrahgames-pareto == 0.1.3

@@ -1,0 +1,7 @@
+project = vipo-pareto-surface-cutter
+
+using version
+using config
+using test
+using install
+using dist
