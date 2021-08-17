@@ -129,7 +129,7 @@ Make sure to install [Mingw-w64](https://www.mingw-w64.net) on your system and i
     bdep init -C ../.build-mingw @mingw cc \
         config.cxx=x86_64-w64-mingw32-g++ \
         config.cxx.poptions="-DNDEBUG -D_USE_MATH_DEFINES" \
-        config.cxx.coptions="-O3" \
+        config.cxx.coptions="-O3 -fext-numeric-literals" \
         config.cxx.loptions="-fPIC -static -static-libgcc -static-libstdc++"
 
 Update the created configuration and put the executables that can be found inside the configuration folder on a Windows computer.
